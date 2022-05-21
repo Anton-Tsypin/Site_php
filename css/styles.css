@@ -1,0 +1,118 @@
+:root {
+    --main_bg: #e3e3e3;
+    --base_bg: #f3f3f3;
+    --text_color: #000000;
+    --button_bg: #ededed;
+    --msg_bg: #ffefd0;
+    --msg_border: #ffa908;
+}
+
+:root[theme = 'dark']{
+    --main_bg: #545454;
+    --base_bg: #4c4c4c;
+    --text_color: #bcbcbc;
+    --button_bg: #4b4b4b;
+    --msg_bg: #4e483d;
+    --msg_border: #1a160f;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--main_bg);
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--text_color);
+}
+
+.header_back form{
+    position: fixed;
+    transform: translate(-50%, -50%);
+}
+
+input, button{
+    margin: 4px;
+    padding: 4px;
+    background-color: var(--button_bg);
+    border-width: 1px;
+}
+
+.X{
+    color: rgb(230, 30, 30);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header_style{
+    z-index: 1001;
+    padding: 5px;
+    width: 80%;
+    position: fixed;  left: 50%; top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+    
+.header_back{
+    z-index: 1000;
+    position: fixed;  left: 0%; top: 0%;
+    width: 100%;
+    height: 50px;
+    -webkit-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    background: var(--base_bg);
+    display: inline-block;
+    border: 1px solid #818181;
+}
+
+.msg {
+    background: var(--msg_bg);
+    border: 2px solid;
+    border-color: var(--msg_border);
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.base_form{   
+    padding: 20px;
+    margin-top: 5%;
+    margin-left: 50%;
+    margin-bottom: 20px;
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    background-color: var(--base_bg);
+    display: inline-block;
+    border: 1px solid #818181;
+}
+
+.table{
+    padding: 0px;
+}
+
+.table td{
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+.selected {
+    opacity: 0.001;
+  }
