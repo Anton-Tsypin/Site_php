@@ -7,11 +7,11 @@
     --msg_border: #ffa908;
 }
 
-:root[theme = 'dark']{
+:root[theme = 'dark'] {
     --main_bg: #545454;
     --base_bg: #4c4c4c;
     --text_color: #bcbcbc;
-    --button_bg: #4b4b4b;
+    --button_bg: #3b3b3b;
     --msg_bg: #4e483d;
     --msg_border: #1a160f;
 }
@@ -38,26 +38,34 @@ body {
     color: var(--text_color);
 }
 
-.header_back form{
+.header_back form {
     position: fixed;
     transform: translate(-50%, -50%);
 }
 
-input, button{
+input, button {
     margin: 4px;
     padding: 4px;
     background-color: var(--button_bg);
     border-width: 1px;
 }
 
-.X{
+input:hover {
+    background: rgba(0, 0, 0, 0.1)
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.1)
+}
+
+.X {
     color: rgb(230, 30, 30);
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
 }
 
-.header_style{
+.header_style {
     z-index: 1001;
     padding: 5px;
     width: 80%;
@@ -67,7 +75,7 @@ input, button{
     transform: translate(-50%, -50%);
 }
     
-.header_back{
+.header_back {
     z-index: 1000;
     position: fixed;  left: 0%; top: 0%;
     width: 100%;
@@ -90,7 +98,7 @@ input, button{
     font-weight: bold;
 }
 
-.base_form{   
+.base_form {   
     padding: 20px;
     margin-top: 5%;
     margin-left: 50%;
@@ -103,11 +111,11 @@ input, button{
     border: 1px solid #818181;
 }
 
-.table{
+.table {
     padding: 0px;
 }
 
-.table td{
+.table td {
     margin: 0px;
     padding: 10px;
     text-align: center;
@@ -115,4 +123,36 @@ input, button{
 
 .selected {
     opacity: 0.001;
-  }
+}
+
+.main_img {
+    border: 4px solid black;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+    width: 400px;
+    height: 400px;
+}
+
+.mini {
+    margin-left: 4px;
+    width: 72.5px;    
+    height: 72.5px;
+}
+
+.mini_images_div{
+    margin-top: 10px;
+    margin-left: 14.5%;
+}
+
+.arrow{
+    margin-left: -36px;
+}
+
+.arrow_button{
+    font-size: 30px;
+    user-select: none; 
+}
+
+.arrow_button:hover{
+    cursor: pointer;
+}

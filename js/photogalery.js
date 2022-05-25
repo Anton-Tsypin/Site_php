@@ -10,7 +10,8 @@ if (localStorage.getItem('number') !== null){
   window.number = 0;
 }
 
-function image(direction){
+// смена главного изображения стрелочками
+function image(direction){ 
   if(direction == "right"){
       number++;
       if(number == image_count)
@@ -25,6 +26,7 @@ function image(direction){
   mini_number_check();
 }
 
+// создание главного изображения
 main_img = document.createElement('img');
 main_img.src = String(images_array[number]);
 main_img.className = 'main_img';
@@ -33,7 +35,7 @@ main_img.width = 400;
 main_img.height = 400;
 document.getElementById('photo_div').append(main_img);
 
-
+// смена главного изображения кликом по мини
 function image_click(){
   if(this.src.match(/localhost/g)){
     console.log(this.src);
@@ -46,14 +48,13 @@ function image_click(){
   mini_number_check()
 }
 
-
 if(localStorage.getItem('mini_number') !== null){
   window.mini_number = Number(localStorage.getItem('mini_number'));
 } else {
   window.mini_number = number;
 }
 
-
+// установка мини изображений
 function mini_images(j){
   let i = 0;
   while(i < 5){
@@ -68,6 +69,7 @@ function mini_images(j){
   mini_number_check()
 }
 
+// смена мини изображений стрелочками
 function mini(direction){
   if(direction == "right"){
     mini_number = ((mini_number + 1) % image_count);
@@ -82,6 +84,7 @@ function mini(direction){
   mini_images(mini_number);
 }
 
+// создание мини изображений
 div = document.createElement('div');
 div.id = "images_div";
 div.className = "mini_images_div";
@@ -103,6 +106,7 @@ for(let i = 0; i < 5; i++){
 }
 mini(null);
 
+// проверка, является ли мини изображение выбранным
 function mini_number_check(){
   for(let i = 0; i < 5; i++){
     el = document.getElementById('image' + i)

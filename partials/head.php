@@ -23,8 +23,8 @@
         </div>
     </header>
     
-    <footer style="position: fixed; bottom: 5%; right: 4%">
-        <img src="https://www.codewars.com/users/Anton_Tsypin/badges/large">
+    <footer style="z-index: 2100; position: fixed; bottom: 5%; right: 4%">
+        <a href="https://www.codewars.com/users/Anton_Tsypin"><img src="https://www.codewars.com/users/Anton_Tsypin/badges/large"></a>
     </footer>
     
     <script src = "js/themes.js" ></script>

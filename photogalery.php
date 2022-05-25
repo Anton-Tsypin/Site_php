@@ -12,7 +12,7 @@
         </div>
         <p style="font-size: 18px; color: #333; font-weight: bold;" id="num_img"></p>
         <span class="arrow_button" onclick="mini('left')" style="margin-left: 10%; position: fixed; left: 0%; bottom: 40px;">&lt;</span>
-        <span class="arrow_button" onclick="mini('right')" style="margin-left: 84.5%; position: fixed; left: 0%; bottom: 40px;">&gt;</span>
+        <span class="arrow_button" onclick="mini('right')" style="margin-left: 86.5%; position: fixed; left: 0%; bottom: 40px;">&gt;</span>
         <script src="js/photogalery.js"></script>
     </div>
 </body> 
